@@ -1,0 +1,172 @@
+// object literals
+
+// const jsUSer = {
+//     name:"Ajay",   // by default key will be string
+//     age:10,
+//     location:"Jaipur",
+//     email:"Ajay@google.com",
+//     isLoggedIn: false,
+//     lastLOginDays:["monday","tuesday"]
+// }
+
+// console.log(jsUSer.email);
+// console.log(jsUSer[email]);// email is not defined
+// console.log(jsUSer["email"]);
+
+// using symbol datatypes
+
+// let mySym = Symbol("key1");
+// const jsUSer1 = {
+//     name:"Ajay",   // by default key will be string
+//     age:10,
+//     mySym:"mykey1",         // typeof will be string
+//     location:"Jaipur",
+//     email:"Ajay@google.com",
+//     isLoggedIn: false,
+//     lastLOginDays:["monday","tuesday"]
+// }
+// console.log(jsUSer1.mySym);
+// console.log(typeof jsUSer1.mySym);
+
+// let mySym1 = Symbol("key1");
+// const jsUSer2 = {
+//     name:"Ajay",   // by default key will be string
+//     age:10,
+//     [mySym1]:"mykey1",         // typeof will be string
+//     location:"Jaipur",
+//     email:"Ajay@google.com",
+//     isLoggedIn: false,
+//     lastLOginDays:["monday","tuesday"]
+// }
+
+// console.log(typeof jsUSer2[mySym1]);
+
+// const jsUSer = {
+//   name: "Ajay", // by default key will be string
+//   age: 10,
+//   location: "Jaipur",
+//   email: "Ajay@google.com",
+//   isLoggedIn: false,
+//   lastLOginDays: ["monday", "tuesday"],
+// };
+
+// jsUSer.email = "Ajay@chatgpt.com";
+// Object.freeze(jsUSer);
+// jsUSer.email = "Ajay@microsoft.com";
+// console.log(jsUSer);
+
+// jsUSer.greeting = function () {
+//   console.log("hello js user");
+// };
+
+// console.log(jsUSer.greeting);    // function reference
+
+// console.log(jsUSer.greeting());
+
+// jsUSer.greetingTwo = function(){
+//     console.log(`hello js user,${this.name}`);
+// }
+
+// console.log(jsUSer.greeting());
+// console.log(jsUSer.greetingTwo());
+
+// episode 17
+// singleton
+// const tinderUser = new Object();
+// console.log(tinderUser);
+
+// const tinderUser1 = {}
+// // console.log(tinderUser1);
+// tinderUser1.id = "123abc";
+// tinderUser1.name = "sammy";
+// tinderUser1.isLoggedIn = false;
+
+// console.log(tinderUser1);
+
+// nested object
+
+// const regularUser = {
+//   email: "some@gmail.com",
+//   fullName: {
+//     userFullName: {
+//       firstName: "Ajay",
+//       lastName: "kumar",
+//     },
+//   },
+// };
+
+// console.log(regularUser);
+// // console.log(regularUser.fullName);
+// console.log(regularUser.fullName.userFullName);
+// console.log(regularUser.fullName.userFullName.firstName);
+
+
+// object using spread operator
+
+// const obj1 = {1:"a",2:"b"};
+// const obj2 = {3:"c",4:"d"};
+
+// const obj3 = {...obj1,...obj2};
+// console.log(obj3);
+
+
+
+// arary of object which help in database
+
+// const user =[
+//     {
+//         id:1,
+//         email:"h@gmail.com",
+//     },
+//     {
+//         id:2,
+//         email:"h@gmail.com",
+//     },
+//     {
+//         id:3,
+//         email:"h@gmail.com",
+//     },
+//     {
+//         id:4,
+//         email:"h@gmail.com",
+//     },
+//     {
+//         id:5,
+//         email:"h@gmail.com",
+//     }
+// ]
+
+// console.log(user[1].email);
+
+
+
+// getting keys and values
+const tinderUser1 = {}
+// console.log(tinderUser1);
+tinderUser1.id = "123abc";
+tinderUser1.name = "sammy";
+tinderUser1.isLoggedIn = false;
+
+// console.log(tinderUser1);
+// console.log(Object.keys(tinderUser1));  // typeof  array
+// console.log(Object.values(tinderUser1)); 
+
+
+// episode 18 
+// destructor of object
+
+const Course = {
+    courseName: "js in hindi",
+    price:"999",
+    courseInstructor:"hitesh",
+}
+// console.log(Course.courseInstructor);
+
+// const{courseInstructor}=Course;
+// console.log(courseInstructor);
+
+// const{courseInstructor:instructor}= Course;
+// console.log(instructor);
+
+
+// json formatter website 
